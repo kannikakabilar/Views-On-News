@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/register_style.css' %}">
+{% endblock custom_css %}
+
+{% block content %}
+<div class="container" id="home-content">
+    <div class="row center">
+        <div class="col-md-6 offset-md-3">
+            <h4>Create a new account</h4>
+            {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                <div {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Sign Up</button> &emsp; Already have an account? <a href="{% url 'accounts:login' %}">Login</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
