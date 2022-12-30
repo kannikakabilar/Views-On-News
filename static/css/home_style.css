@@ -1,0 +1,34 @@
+html, body {
+    height:100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+html{
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+}
+body {
+    background: rgba(0, 0, 0, 0);
+
+}
+
+.btn {
+    background-color: #00ccfa;
+    color: #00022b;
+    border-color: #00ccfa;
+    transition: background-color 0.5s;
+  }
+  
+.btn:hover {
+    
+    background-color: #00022b;
+    color: #00ccfa;
+    border-color: #00ccfa;
+}
+
+#home-content{
+    text-align: center;
+    padding-top: 7%;
+}
+
