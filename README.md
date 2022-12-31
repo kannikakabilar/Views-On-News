@@ -22,3 +22,33 @@ Users can view the trending polls and select it to follow and vote. Their votes 
 <br />
 ![Quote](https://github.com/kannikakabilar/Views-On-News/blob/main/screenshots/Screen%20Shot%202022-12-29%20at%2010.14.50%20PM.png)
 <br />
+<br />
+# How To Run
+- Requirements; the following needs to be installed
+```md
+> python3 --version
+> pip --version
+```
+- Using an existing virtual environment with test records <br />
+Navigate to the application's directory and type the following commands. 
+```md
+> source newenv/bin/activate
+> python3 manage.py runserver
+``` 
+- Running it from scratch <br />
+Navigate to the application's directory and type the following commands. 
+```md
+> python3 -m venv myvirenv
+> source myvirenv/bin/activate
+> python3 -m pip install Django
+> python3 manage.py makemigrations members
+> python3 manage.py migrate
+> python3 manage.py runserver
+``` 
+- Create a superuser for admin purposes 
+```md
+> python3 manage.py createsuperuser
+``` 
+<br />
+To view application go to: http://127.0.0.1:8000/
+<br />
