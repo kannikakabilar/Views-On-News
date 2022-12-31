@@ -34,6 +34,8 @@ Navigate to the application's directory and type the following commands.
 ```md
 > source newenv/bin/activate
 > python3 manage.py runserver
+sample username: kannika
+sample password: kannika
 ``` 
 - Running it from scratch <br />
 Navigate to the application's directory and type the following commands. 
